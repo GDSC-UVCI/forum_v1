@@ -1,47 +1,31 @@
-# Forum API - Setup Guide
+# Forum API
 
-Ce guide explique comment cloner et exécuter une application API Django localement à l'aide d'une base de données PostgreSQL. La base de données utilisée est `forum_bd`, avec l'utilisateur `admin` et le mot de passe `1234`.
+## DESCRIPTION
+API REST Forum est un projet qui consiste à développer une API REST pour la gestion de Forum en utilisant le framework Django. L'exercice est divisé en 3 étapes pour permettre une approche progressive.
 
-## Prerequies
+## PREREQUIS
+Python 3.12, Un editeur de code, PostgreSQL Postman et Django==5.x ou superieur
 
-Avant de commencer, assurez-vous que le logiciel suivant est installé sur votre ordinateur:
+## Installation
+- 1.Cloner le repository et ouvrez le dossier Cloner le repository dans un dossier souhaité avec la commande git clone https://github.com/elsouleymane/forum_v1.git et ouvrez le dossier avec la commande:
+    ```bash
+    cd forum_v1
+    ```
 
-- **Python 3.12**
-- **PostgreSQL**
-- **pip** 
-- **git** 
-- **Virtualenv** 
+- 2.Créer un environnement virtuelle
 
----
+- 3.Activez l'environnement virtuelle
 
-## 1. Clone the Project Repository
-
-Start by cloning the project repository to your local machine using git:
-
+- 4.télechargez les modules nécessaires avec la commande:
 ```bash
-git clone https://github.com/GDSC-UVCI/forum_v1.git
-cd forum_project
+   pip install -r requirements
 ```
-## 2. Creer environnement virtuel et l'activer
 
-```bash
-python -m venv venv
-venv/Scripts/activate
-```
-## 3. Installer les dépendances
+- 5. Créez votre bd nommée forum_bd dans PostgreSQL et remplacez vos infos de connexion par ceux qui sont dans la section DATABASES du setting.py
 
-```bash
-pip install -r requirements.txt
-```
-## 4. Créer une base de donnée Postgresql forum_bd
-## 6. Créer un utilisateur admin avec le mot de passe '1234' et lui donner les droit sur notre base de donnée
-## 7. Faire les migrations dans notre base de donnée
+- 6. Lancez votre serveur avec la commande python manage.py runserver
 
-```bash
-python manage.py makemigrations
-python manage.py migrate
-```
-## 8. Enfin on peut lançer le serveur
-```bash
-python manage.py runserver
-```
+TEST
+
+La documentation:
+(https://group-4-projet-api-rest-forum-ada.postman.co/workspace/Group-4-projet-API-REST-Forum-A~ee3f3c2a-28a1-46fd-870c-426dd7eb7bdb/collection/32968554-5d232a75-ec8b-46b8-ade6-0e1219f9fca2?action=share&creator=32968554)
