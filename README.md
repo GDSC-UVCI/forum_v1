@@ -7,13 +7,11 @@ API REST Forum est un projet qui consiste à développer une API REST pour la ge
 Python 3.12, Un editeur de code, PostgreSQL Postman et Django==5.x ou superieur
 
 ## Installation
-- 1.Cloner le repository et ouvrez le dossier Cloner le repository dans un dossier souhaité avec la commande
+- 1.Cloner le repository et ouvrez le dossier Cloner le repository dans un dossier souhaité et ouvrez le dossier avec les commandes:
   ```bash
   git clone https://github.com/elsouleymane/forum_v1.git
- ```
-   et ouvrez le dossier avec la commande:
-    ```bash
-    cd forum_v1
+ 
+  cd forum_v1
     ```
 
 - 2.Créer un environnement virtuelle
@@ -25,9 +23,9 @@ Python 3.12, Un editeur de code, PostgreSQL Postman et Django==5.x ou superieur
    pip install -r requirements
 ```
 
-- 5. Créez votre bd nommée forum_bd dans PostgreSQL et remplacez vos infos de connexion par ceux qui sont dans la section DATABASES du setting.py
+-  5.Créez votre bd nommée forum_bd dans PostgreSQL et remplacez vos infos de connexion par ceux qui sont dans la section DATABASES du setting.py
 
-- 6. Lancez votre serveur avec la commande python manage.py runserver
+-  6.Lancez votre serveur avec la commande python manage.py runserver
 
 TEST
 
